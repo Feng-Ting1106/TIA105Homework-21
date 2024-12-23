@@ -32,61 +32,61 @@ public class Work3 {
 //		三角形、其它三角形或不是三角形，如圖示結果：
 		Scanner sc = new Scanner(System.in);
 
-//		System.out.println("請輸入三個整數:");
-//		int x = sc.nextInt();
-//		int y = sc.nextInt();
-//		int z = sc.nextInt();
-//		if (x == 0 || x == 0 || z == 0) {
-//			System.out.println("不是三角形");
-//		} else if (x == y && y == z) {
-//			System.out.println("正三角形");
-//		} else if (rightTriamgle(x, y, z) || rightTriamgle(y, x, z) || rightTriamgle(z, x, y)) {
-//			System.out.println("直角三角形");
-//		} else if (x == y || x == z || y == z) {
-//			System.out.println("等腰三角形");
-//		} else {
-//			System.out.println("其它三角形");
-//		}
+		System.out.println("請輸入三個整數:");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		int z = sc.nextInt();
+		if (x == 0 || x == 0 || z == 0) {
+			System.out.println("不是三角形");
+		} else if (x == y && y == z) {
+			System.out.println("正三角形");
+		} else if (rightTriamgle(x, y, z) || rightTriamgle(y, x, z) || rightTriamgle(z, x, y)) {
+			System.out.println("直角三角形");
+		} else if (x == y || x == z || y == z) {
+			System.out.println("等腰三角形");
+		} else {
+			System.out.println("其它三角形");
+		}
 
 //		請設計一隻程式，會亂數產生一個0～9的數字，然後可以玩猜數字遊戲，猜錯會顯示錯誤訊息
 //		猜對則顯示正確訊息，如圖示結果：
 //		進階功能：產生0～100亂數，每次猜就會提示你是大於還是小於正確答案
-//		int a = (int) (Math.random() * 101);
-//		System.out.println("請猜一個0~100的數字");
-//		while (true) {
-//			int b = sc.nextInt();
-//			if (b == a) {
-//				System.out.println("答對了! 答案就是" + b);
-//				break;
-//			} else if (b > a) {
-//				System.out.println("猜太大了，再猜一次看看");
-//			} else {
-//				System.out.println("猜太小了，再猜一次看看");
-//			}
-//		}
+		int a = (int) (Math.random() * 101);
+		System.out.println("請猜一個0~100的數字");
+		while (true) {
+			int b = sc.nextInt();
+			if (b == a) {
+				System.out.println("答對了! 答案就是" + b);
+				break;
+			} else if (b > a) {
+				System.out.println("猜太大了，再猜一次看看");
+			} else {
+				System.out.println("猜太小了，再猜一次看看");
+			}
+		}
 //		搭配陣列改寫成終極密碼版，會直接顯示剩餘可能數字的範圍
-//		int i = (int) (Math.random() * 101);
-//		System.out.println("請猜一個0~100的數字");
-//
-//		int array[] = new int[3];
-//		array[0] = 0;
-//		array[1] = i;
-//		array[2] = 100;
-//		while (true) {
-//			int j = sc.nextInt();
-//			if (j > array[2] || j < array[0]) {
-//				System.out.println("輸入的數字超出範圍，請重新輸入");
-//			} else if (j == i) {
-//				System.out.println("答對了! 答案就是" + j);
-//				break;
-//			} else if (j > i) {
-//				array[2] = j;
-//				System.out.println(array[0] + "~" + array[2]);
-//			} else if (j < i) {
-//				array[0] = j;
-//				System.out.println(array[0] + "~" + array[2]);
-//			}
-//		}
+		int i = (int) (Math.random() * 101);
+		System.out.println("請猜一個0~100的數字");
+
+		int array[] = new int[3];
+		array[0] = 0;
+		array[1] = i;
+		array[2] = 100;
+		while (true) {
+			int j = sc.nextInt();
+			if (j > array[2] || j < array[0]) {
+				System.out.println("輸入的數字超出範圍，請重新輸入");
+			} else if (j == i) {
+				System.out.println("答對了! 答案就是" + j);
+				break;
+			} else if (j > i) {
+				array[2] = j;
+				System.out.println(array[0] + "~" + array[2]);
+			} else if (j < i) {
+				array[0] = j;
+				System.out.println(array[0] + "~" + array[2]);
+			}
+		}
 
 		System.out.println("阿文 請輸入你不想有的數字(1~9)");
 		int notLike;
