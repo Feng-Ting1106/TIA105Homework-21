@@ -95,12 +95,12 @@ public class Work3 {
 		notLike = sc.nextInt();
 		for (int f = 1; f <= 49; f++) {
 			if (okNum(f, notLike)) {
-				System.out.print(f + "  ");
+				System.out.print(f + " ");
 				sum++;
 			}
 		}
 		System.out.println();
-		System.out.println("總共有" + sum + "個數字可選" + "\n");
+//		System.out.println("總共有" + sum + "個數字可選" + "\n");
 		System.out.println("以下是電腦選號亂數印出的六組號碼");
 		int ranNumber = 0;
 		int c = 0;
