@@ -1,4 +1,4 @@
-package work4;
+	package work4;
 
 public class Q6 {
 	
