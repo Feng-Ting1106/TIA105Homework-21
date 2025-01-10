@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Q12 {
 //	設計一個方法，使用者鍵盤輸入寬與高時，即會印出對應的*長方形
-	public void starSquare(int width, int height) {
+	public void starSquare() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("請輸入寬與高:");
-		width = sc.nextInt();
-		height = sc.nextInt();
+		int width = sc.nextInt();
+		int height = sc.nextInt();
 		for (int i = 0; i < height; i++) {
 			for (int x = 0; x < width; x++) {
 				System.out.print("*");
@@ -35,7 +35,7 @@ public class Q12 {
 	public static void main(String[] args) {
 		Q12 q = new Q12();
 		Object obj = new Object();
-		q.starSquare(0, 0);
+		q.starSquare();
 		q.randAvg();
 	}
 }
